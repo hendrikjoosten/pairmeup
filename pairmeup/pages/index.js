@@ -7,7 +7,7 @@ import myGif from 'url'
 
 
 export default function Home() {
-  returna (
+  return (
     <div className={styles.container}>
 
 
