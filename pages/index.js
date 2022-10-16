@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
       </Head>
       <Navbar/>
-      <Hero /> 
+      <Hero/> 
     </div>
   );
 }

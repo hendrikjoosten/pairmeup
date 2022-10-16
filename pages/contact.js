@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from '../components/Navbar';
+import Contact_Background from '../components/Contact_Background';
 
 const Contact = () => {
   return (
     
     <div>
         <Navbar/>
-        <h2>Contact Page</h2>
+        <Contact_Background/>
+        
     </div>
   )
 };

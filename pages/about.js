@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from '../components/Navbar';
+import About_Background from '../components/About_Background';
 
 const About = () => {
   return (
     
     <div>
         <Navbar/>
-        <h2>About Page</h2>
+        <About_Background/> 
     </div>
   )
 };
