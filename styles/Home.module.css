@@ -75,7 +75,7 @@
 
 .card {
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 1.0rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
@@ -126,4 +126,8 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+.testFont {
+  font-family: 'Bungee Spice', cursive;
 }
