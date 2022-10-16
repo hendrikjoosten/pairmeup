@@ -4,10 +4,40 @@ import Hero from '../components/Hero';
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-      </Head>
-      <Hero /> 
+    <div className={styles.container}>
+
+
+      <main className={styles.main}>
+        <h1 className={styles.title}>
+          pairmeup <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+        <div className={styles.grid}>
+
+        <span className={styles.card}>
+          <Image src="/assets/hackerman.gif" alt="me" width="64" height="64" />
+          </span>
+
+          <span className={styles.card}>
+          <Image src="/assets/hackerman.gif" alt="me" width="64" height="64" />
+          </span>
+          <span className={styles.card}>
+          <Image src="/assets/hackerman.gif" alt="me" width="64" height="64" />
+          </span>
+
+          
+        </div>
+      </main>
+
+
+      <footer className={styles.footer}>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+        </a>
+      </footer>
     </div>
   );
 }
