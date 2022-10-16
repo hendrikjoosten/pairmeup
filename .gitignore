@@ -35,8 +35,3 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# assets 
-# public/assets/dance.gif
-
-# package.lock 
-package-lock.json
