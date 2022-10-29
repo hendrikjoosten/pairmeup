@@ -6,12 +6,12 @@ import NavItem from "./NavItem";
 import Emoji from "react-emoji-render";
 
 const MENU_LIST = [
-  { text: <Emoji text="Home 🏠" ></Emoji>, href: "/" },
-  { text: <Emoji text="Projects 📑" ></Emoji>,  href: "/projects" },
-  { text: <Emoji text="Profiles 🧑‍💻" ></Emoji>, href: "/profiles" },
-  { text: <Emoji text="Leaderboards 🏆" ></Emoji>, href: "/leaderboards" },
-  { text: <Emoji text="About Us ❓" ></Emoji>, href: "/about" },
-  { text: <Emoji text="Contact ✉️" ></Emoji>, href: "/contact" },
+  { text: "Home", emoji:<Emoji text="🏠" ></Emoji>, href: "/" },
+  { text: "Projects", emoji:<Emoji text="📑" ></Emoji>,  href: "/projects" },
+  { text: "Profiles", emoji:<Emoji text="🧑‍💻" ></Emoji>, href: "/profiles" },
+  { text: "Leaderboards", emoji:<Emoji text="🏆" ></Emoji>, href: "/leaderboards" },
+  { text: "About Us", emoji:<Emoji text="❓" ></Emoji>, href: "/about" },
+  { text: "Contact", emoji:<Emoji text="✉️" ></Emoji>, href: "/contact" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
