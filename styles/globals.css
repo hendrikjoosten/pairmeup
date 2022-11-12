@@ -110,6 +110,7 @@ nav{
   flex-direction: column;
   row-gap: 6px;
   cursor: pointer;
+  align-items: center;
 }
 .nav__menu-bar div{
   width: 40px;
@@ -137,6 +138,7 @@ nav{
   font-size: 18px; 
   position: relative;
   transition: all 0.2s;
+  text-align: center;
 }
 
 .nav__link:hover{

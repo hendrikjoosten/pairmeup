@@ -1,8 +1,13 @@
 import Link from "next/link";
-const NavItem = ({ text, href, active }) => {
+
+const NavItem = ({ text, emoji, href, active }) => {
   return (
     <Link href={href} className={`nav__link`}>
+      <div className={`nav__link`}>
       {text}
+      <br></br>
+      {emoji}
+      </div>
     </Link>
   );
 };

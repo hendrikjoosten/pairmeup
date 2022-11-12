@@ -1,18 +1,17 @@
 // https://github.com/CodeWithMarish/responsive-navbar
-
-
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
+import Emoji from "react-emoji-render";
 
 const MENU_LIST = [
-  { text: "Home", href: "/" },
-  { text: "Projects", href: "/projects" },
-  { text: "Profiles", href: "/profiles" },
-  { text: "Leaderboards", href: "/leaderboards" },
-  { text: "About Us", href: "/about" },
-  { text: "Contact", href: "/contact" },
+  { text: "Home", emoji:<Emoji text="🏠" ></Emoji>, href: "/" },
+  { text: "Projects", emoji:<Emoji text="📑" ></Emoji>,  href: "/projects" },
+  { text: "Profiles", emoji:<Emoji text="🧑‍💻" ></Emoji>, href: "/profiles" },
+  { text: "Leaderboards", emoji:<Emoji text="🏆" ></Emoji>, href: "/leaderboards" },
+  { text: "About Us", emoji:<Emoji text="❓" ></Emoji>, href: "/about" },
+  { text: "Contact", emoji:<Emoji text="✉️" ></Emoji>, href: "/contact" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
@@ -42,6 +41,7 @@ const Navbar = () => {
                 setNavActive(false);
               }}
               key={menu.text}
+
             >
               <NavItem active={activeIdx === idx} {...menu} />
             </div>
