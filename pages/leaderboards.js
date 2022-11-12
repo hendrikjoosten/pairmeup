@@ -1,14 +1,25 @@
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
 
-export default function Leaderboards() {
+async function getNavItems() {
+  const navItems = await fetch('http://worldtimeapi.org/api/timezone/Europe/Berlin');
+  return navItems.json();
+}
+
+export default async function Layout({ children }) {
+  const navItems = await getNavItems();
+
   return (
     <>
-    <Navbar/>
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
+      <nav>
+        <ul>
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <Link href={item.href}>{item.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      {children}
     </>
   );
 }
